@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  crm:
+    build:
+      dockerfile: Dockerfile
+    container_name: GTMetrix
+    restart: always
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
+
